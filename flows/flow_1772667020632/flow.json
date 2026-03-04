@@ -1,0 +1,75 @@
+{
+  "id": "flow_1772667020632",
+  "name": "1",
+  "nodes": [
+    {
+      "id": "node_input",
+      "type": "input",
+      "x": 433,
+      "y": 1,
+      "data": {
+        "prompt": "Create a comprehensive strategic analysis for Jaanus, a local Electron-based AI Agent platform, covering market research, feature gaps, architecture recommendations, positioning, and a 3-6 month roadmap."
+      }
+    },
+    {
+      "id": "node_1",
+      "type": "agent",
+      "x": -38,
+      "y": 79,
+      "data": {
+        "prompt": "Conduct a deep-dive competitive analysis for the 2025/2026 AI landscape based on {{input}}. Research Cursor, Windsurf, CrewAI, LangGraph, and local tools like Jan.ai and LM Studio. For each, identify strengths, weaknesses, target groups, and pricing models. Highlight emerging trends in agentic workflows and local-first AI.",
+        "label": "Market Intelligence"
+      }
+    },
+    {
+      "id": "node_2",
+      "type": "agent",
+      "x": 346,
+      "y": 309,
+      "data": {
+        "prompt": "Based on the market research in {{input}}, perform a Feature-Gap analysis for Jaanus. Define the unique selling points (USPs) and identify critical missing features. Develop the positioning strategy (Developer vs. Power User) and recommend state-of-the-art Multi-Agent orchestration patterns (like those in LangGraph or AutoGen) that fit the Jaanus architecture.",
+        "label": "Strategic Architect"
+      }
+    },
+    {
+      "id": "node_3",
+      "type": "agent",
+      "x": 710,
+      "y": 539,
+      "data": {
+        "prompt": "Synthesize the analysis from {{input}} into a final 2000-3000 word Markdown document. Design a 'Skills' system best practice guide including 10 essential skills for Jaanus. Provide a prioritized 3-6 month roadmap (Quick Wins, Medium Impact, Big Bets). Output the content structured for the file path: C:\\Users\\volka\\Desktop\\Jaanus\\claude-agent-dashboard\\STRATEGY.md.",
+        "label": "Product Strategist"
+      }
+    },
+    {
+      "id": "node_output",
+      "type": "output",
+      "x": 665,
+      "y": 186,
+      "data": {}
+    }
+  ],
+  "connections": [
+    {
+      "from": "node_input",
+      "to": "node_1",
+      "branch": null
+    },
+    {
+      "from": "node_1",
+      "to": "node_2",
+      "branch": null
+    },
+    {
+      "from": "node_2",
+      "to": "node_3",
+      "branch": null
+    },
+    {
+      "from": "node_3",
+      "to": "node_output",
+      "branch": null
+    }
+  ],
+  "updatedAt": "2026-03-04T23:32:50.652Z"
+}
