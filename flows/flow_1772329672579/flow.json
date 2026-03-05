@@ -1,0 +1,18 @@
+{
+  "id": "flow_1772329672579",
+  "name": "1",
+  "nodes": [
+    {
+      "id": "node_1772669676955_4863",
+      "type": "agent",
+      "x": 545,
+      "y": 193,
+      "data": {
+        "prompt": "Send an email using the send_email tool:\n- To: vulkaniar@gmail.com\n- Subject: Jaanus Cloud Test — {{input}}\n- Body: This automated email confirms your Jaanus Cloud Flow is running successfully. Timestamp: use the current date and time.",
+        "label": "email-test"
+      }
+    }
+  ],
+  "connections": [],
+  "updatedAt": "2026-03-05T01:13:11.597Z"
+}
