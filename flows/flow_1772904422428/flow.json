@@ -1,0 +1,57 @@
+{
+  "id": "flow_1772904422428",
+  "name": "Flow 1",
+  "nodes": [
+    {
+      "id": "node_input",
+      "type": "input",
+      "x": -268.7078454312155,
+      "y": 54.225216373982704,
+      "data": {}
+    },
+    {
+      "id": "node_output",
+      "type": "output",
+      "x": 540.0581254446049,
+      "y": 62.80020364610135,
+      "data": {}
+    },
+    {
+      "id": "node_1772904438777_3609",
+      "type": "agent",
+      "x": 100,
+      "y": 150,
+      "data": {}
+    },
+    {
+      "id": "node_1772904439597_8450",
+      "type": "agent",
+      "x": 102.8583290907062,
+      "y": -165.84536452303752,
+      "data": {}
+    }
+  ],
+  "connections": [
+    {
+      "from": "node_input",
+      "to": "node_1772904439597_8450",
+      "branch": "out"
+    },
+    {
+      "from": "node_input",
+      "to": "node_1772904438777_3609",
+      "branch": "out"
+    },
+    {
+      "from": "node_1772904439597_8450",
+      "to": "node_output",
+      "branch": "out"
+    },
+    {
+      "from": "node_1772904438777_3609",
+      "to": "node_output",
+      "branch": "out"
+    }
+  ],
+  "updatedAt": "2026-03-07T17:27:43.591Z"
+}
